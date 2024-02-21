@@ -1,0 +1,26 @@
+**Bubble Sort**
+Revisa cada elemento de la lista y lo compara con el siguiente, si el elemento siguiente tiene un valor
+mayor al actual intercambia los valores de la lista, dejando el menor antes y el mayor después.
+Repite este proceso hasta que verifique que no se realiza ninguna modificación al recorrer toda la lista.
+En el peor caso, tiene una complejidad de tiempo O(n^2), siendo n el número de elementos en la lista;
+esto debido a que se requieren n iteraciones para recorrer toda la lista y hasta n comparaciones en cada iteración.
+En el mejor caso su complejidad de tiempo es de O(n).
+Su complejidad espacial es O(1), también llamado constante. Utiliza una cantidad constante de memoria adicional,
+independientemente del tamaño de la lista.
+
+
+**Selection Sort**
+Recorre la lista en busca del elemento de menor valor, una vez recorrida toda la lista intercambia el lugar del valor mínimo 
+y el valor inicial. En la siguiente iteración el valor inicial es el siguiente del recién modificado, se repite este proceso 
+hasta que se haga la comparación entre todos los valores.
+Tiene una complejidad de tiempo O(n^2), ya que en cada iteración del bucle exterior busca el elemento mínimo a través de 
+toda la lista. En TODOS los casos tiene esta complejidad, ya que siempre recorre y compara todos los elementos.
+Su complejidad espacial es constante O(1), ya que los intercambios se realizan en la lista original y no necesita memoria adicional.
+
+
+**Insertion Sort**
+El proceso inicia con un elemento que es el primero de la lista, entonces hay k elementos ordenados de menor a mayor.
+Entonces se toma el elemento k+1 y se compara con todos los elementos ya ordenados, deteniéndose solo cuando encuentra un elemento
+menor o no se encuentran más elementos, en ese momento se inserta el elemento k+1 de la lista, desplazando los demás elementos.
+Tiene una complejidad temporal de O(n^2/2) en el peor de los casos y de O(n) en el mejor de los casos.
+Necesita O(n^2) operaciones para ordenar una lista de n elementos.
